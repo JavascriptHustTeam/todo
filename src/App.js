@@ -1,6 +1,9 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+
+import "./App.css";
+import "antd/dist/antd.css";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
