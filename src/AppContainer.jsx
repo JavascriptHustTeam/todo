@@ -22,8 +22,10 @@ const AppContainer = () => {
 	const handleMarkAsDone = todo => {
 		const index = todos.indexOf(todo);
 		if (index !== -1) {
-			todos[index].done = true;
-			setTodos(todos);
+			if (todos[index].done === true) todos[index].done = false;
+			else todos[index].done = true;
+
+			setTodos([...todos]);
 		}
 	};
 
@@ -31,7 +33,7 @@ const AppContainer = () => {
 		const index = todos.indexOf(todo);
 		if (index !== -1) {
 			todos.splice(index, 1);
-			setTodos(todos);
+			setTodos([...todos]);
 		}
 	};
 
