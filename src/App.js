@@ -1,21 +1,12 @@
-import React from "react";
-import firebase from "firebase/app";
+import React, { PureComponent } from "react";
 
 import "./App.css";
 import "antd/dist/antd.css";
-import "react-toastify/dist/ReactToastify.css";
 
 import AppContainer from "./AppContainer";
-import firebaseConfig from "./firebase.config";
 
-import "firebase/firestore";
-
-require("dotenv").config();
-
-firebase.initializeApp(firebaseConfig);
-
-function App() {
-	return <AppContainer />;
+export default class App extends PureComponent {
+	render() {
+		return <AppContainer />;
+	}
 }
-
-export default App;

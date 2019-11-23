@@ -26,6 +26,7 @@ export default class ListTodo extends PureComponent {
 
 // style object
 const styles = {
+	// co the la propety
 	itemContainer: {
 		display: "flex",
 		justifyContent: "space-between",
@@ -35,6 +36,7 @@ const styles = {
 		paddingTop: 20,
 		paddingBottom: 20
 	},
+	// hoac function
 	item: todo => ({
 		width: "calc(100% - 165px)",
 		textDecoration: todo.done === true ? "line-through" : "dashed"
